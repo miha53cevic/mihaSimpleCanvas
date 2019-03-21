@@ -1,6 +1,6 @@
 # mihaSimpleCanvas
 Very basic HTML5 Canvas functions that simplify its usage
-<br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 ## Prerequisites
 - You must create a div id='canvasArea' inside your html file
 - add mihaSimpleCanvas above your all of your other javascript <script> references
