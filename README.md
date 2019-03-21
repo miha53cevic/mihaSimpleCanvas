@@ -1,5 +1,5 @@
 # mihaSimpleCanvas
-A very basic HTML5 Canvas functions that simplify its usage
+A few very basic HTML5 Canvas functions that simplify its usage
 
 ## Prerequisites
 - You must create a div id='canvasArea' inside your html file
