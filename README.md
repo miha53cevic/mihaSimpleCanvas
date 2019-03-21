@@ -1,6 +1,11 @@
 # mihaSimpleCanvas
 A few very basic HTML5 Canvas functions that simplify its usage
 
+# TODO
+- POP and PUSH translate, using ctx.save() and ctx.restore().
+- Rotate with ctx.rotate
+- enable context to be webgl in createCanvas(x,y,context).
+
 ## Prerequisites
 - You must create a div id='canvasArea' inside your html file
 - add mihaSimpleCanvas above all of your other javascript <script> references
