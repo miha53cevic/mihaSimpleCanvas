@@ -3,7 +3,7 @@ A few very basic HTML5 Canvas functions that simplify its usage
 
 ## Prerequisites
 - You must create a div id='canvasArea' inside your html file
-- add mihaSimpleCanvas above your all of your other javascript <script> references
+- add mihaSimpleCanvas above all of your other javascript <script> references
   
 ## Usage
 ### createCanvas(x, y)
