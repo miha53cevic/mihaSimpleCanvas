@@ -4,7 +4,7 @@ let HEIGHT;
 let ctx;
 
 // Create Canvas element and place inside of html file inside of <div id="canvasArea"> </div>
-function createCanvas(x, y) {
+function createCanvas(x, y, context = '2d') {
     let canvas = document.createElement('canvas');
     canvas.id = 'canvas';
     canvas.width = x;
@@ -14,7 +14,7 @@ function createCanvas(x, y) {
 
     WIDTH = canvas.width;
     HEIGHT = canvas.height;
-    ctx = canvas.getContext('2d');
+    ctx = canvas.getContext(context);
 }
 
 // Clear HTML5 Canvas
@@ -32,6 +32,31 @@ function clearPart(color, x1, y1, x2, y2) {
 // Move the coordinate system
 function translate(x, y) {
     ctx.translate(x, y);
+}
+
+// Rotate the cordinate system
+function rotate(x) {
+    ctx.rotate(x);
+}
+
+// Convert Degress to radian
+function toRadian(x) {
+    return (x * Math.PI) / 180;
+}
+
+// Save current Transformation
+function push() {
+    ctx.save();
+}
+
+// Pop current Transformation from the array
+function pop() {
+    ctx.restore();
+}
+
+// Reset Transformation
+function resetTransform() {
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
 }
 
 // Draw line from T(x1, y1) to P(x2, y2)
