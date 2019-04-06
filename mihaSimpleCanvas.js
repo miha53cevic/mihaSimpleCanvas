@@ -3,6 +3,8 @@ let WIDTH;
 let HEIGHT;
 let ctx;
 
+let MOUSE_POS;
+
 // Create Canvas element and place inside of html file inside of <div id="canvasArea"> </div>
 function createCanvas(x, y, context = '2d') {
     let canvas = document.createElement('canvas');
@@ -15,6 +17,12 @@ function createCanvas(x, y, context = '2d') {
     WIDTH = canvas.width;
     HEIGHT = canvas.height;
     ctx = canvas.getContext(context);
+
+    // Event for finding mouse position on click
+    canvas.addEventListener("click", function (evt) {
+        MOUSE_POS = mousePos(canvas, evt);
+        //alert(MOUSE_POS.x + ',' + MOUSE_POS.y);
+    }, false);
 }
 
 // Clear HTML5 Canvas
@@ -73,4 +81,13 @@ function line(x1, y1, x2, y2, color = 'white') {
 function drawFillRect(x, y, w, h, color = 'white') {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
+}
+
+// Get mouse position in the HTML5 Canvas function
+function mousePos(canvas, evt) {
+    let rect = canvas.getBoundingClientRect();
+    return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+    };
 }
