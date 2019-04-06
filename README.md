@@ -43,7 +43,12 @@ A few very basic HTML5 Canvas functions that simplify its usage
 - Draw a filled rectangle at T(x, y) with width, height and a fillcolor
 - Default color of the rectangle is white
 
+### mousePos(canvas, evt)
+- Depending where on the canvas you clicked returns those coordinates
+- Depends on the canvas event click
+
 ### Globals
 - WIDTH is canvas.width
 - HEIGHT is canvas.height
 - ctx is canvas.getContext('2d')
+- MOUSE_POS is the mouse position on the canvas if the left mouse button is pressed
