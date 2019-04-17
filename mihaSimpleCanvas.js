@@ -19,7 +19,7 @@ function createCanvas(x, y, context = '2d') {
     ctx = canvas.getContext(context);
 
     // Event for finding mouse position on click
-    canvas.addEventListener("click", function (evt) {
+    canvas.addEventListener("mousemove", function (evt) {
         MOUSE_POS = mousePos(canvas, evt);
         //alert(MOUSE_POS.x + ',' + MOUSE_POS.y);
     }, false);
@@ -68,8 +68,9 @@ function resetTransform() {
 }
 
 // Draw line from T(x1, y1) to P(x2, y2)
-function line(x1, y1, x2, y2, color = 'white') {
+function line(x1, y1, x2, y2, color = 'white', width = 1) {
     ctx.strokeStyle = color;
+    ctx.lineWidth = width;
 
     ctx.beginPath();
     ctx.moveTo(x1, y1);
@@ -81,6 +82,16 @@ function line(x1, y1, x2, y2, color = 'white') {
 function drawFillRect(x, y, w, h, color = 'white') {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
+}
+
+// Draw an arc at S(x, y) that goes from sAngle to eAngle in radians
+function drawArc(sx, sy, r, sAngle, eAngle, color = 'white', width = 1) {
+    ctx.strokeStyle = color;
+    ctx.lineWidth = width;
+
+    ctx.beginPath();
+    ctx.arc(sx, sy, r, sAngle, eAngle);
+    ctx.stroke();
 }
 
 // Get mouse position in the HTML5 Canvas function
