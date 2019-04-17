@@ -44,7 +44,7 @@ A few very basic HTML5 Canvas functions that simplify its usage
 - Default color of the rectangle is white
 
 
-## drawArc(sx, sy, r, sAngle, eAngle, color = 'white', width = 1)
+### drawArc(sx, sy, r, sAngle, eAngle, color = 'white', width = 1)
 - Draw an arc at S(x, y) that goes from sAngle to eAngle in radians
 - Default color is white
 - Default lineWidth is 1
