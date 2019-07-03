@@ -26,14 +26,14 @@ function createCanvas(x, y, context = '2d') {
 }
 
 // Clear HTML5 Canvas
-function clear(color = 'black') {
-    ctx.fillStyle = color;
+function clear(colour = 'black') {
+    ctx.fillStyle = colour;
     ctx.fillRect(0, 0, WIDTH, HEIGHT);
 }
 
 // Clear a certain part of the HTML5 Canvas
-function clearPart(color, x1, y1, x2, y2) {
-    ctx.fillStyle = color;
+function clearPart(colour, x1, y1, x2, y2) {
+    ctx.fillStyle = colour;
     ctx.fillRect(x1, y1, x2, y2);
 }
 
@@ -68,8 +68,8 @@ function resetTransform() {
 }
 
 // Draw line from T(x1, y1) to P(x2, y2)
-function line(x1, y1, x2, y2, color = 'white', width = 1) {
-    ctx.strokeStyle = color;
+function line(x1, y1, x2, y2, colour = 'white', width = 1) {
+    ctx.strokeStyle = colour;
     ctx.lineWidth = width;
 
     ctx.beginPath();
@@ -78,20 +78,33 @@ function line(x1, y1, x2, y2, color = 'white', width = 1) {
     ctx.stroke();
 }
 
-// Draw a filled rectangle at T(x, y) with width, height and a fillcolor
-function drawFillRect(x, y, w, h, color = 'white') {
-    ctx.fillStyle = color;
+// Draw a filled rectangle at T(x, y) with width, height and a fillcolour
+function drawFillRect(x, y, w, h, colour = 'white') {
+    ctx.fillStyle = colour;
     ctx.fillRect(x, y, w, h);
 }
 
 // Draw an arc at S(x, y) that goes from sAngle to eAngle in radians
-function drawArc(sx, sy, r, sAngle, eAngle, color = 'white', width = 1) {
-    ctx.strokeStyle = color;
+function drawArc(sx, sy, r, sAngle, eAngle, colour = 'white', width = 1) {
+    ctx.strokeStyle = colour;
     ctx.lineWidth = width;
 
     ctx.beginPath();
     ctx.arc(sx, sy, r, sAngle, eAngle);
     ctx.stroke();
+}
+
+// Draw filled Text at T(x, y) with a fontSize, colour
+function drawFillText(text, x, y, fontSize, colour = 'white', font = 'Arial') {
+    ctx.font = fontSize + 'px ' + font;
+    ctx.fillStyle = colour;
+    ctx.fillText(text, x, y);
+}
+
+// Draw stroked Text at T(x, y) with a fontSize
+function drawStrokeText(text, x, y, fontSize, font = 'Arial') {
+    ctx.font = fontSize + 'px ' + font;
+    ctx.strokeText(text, x, y);
 }
 
 // Get mouse position in the HTML5 Canvas function
