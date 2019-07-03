@@ -49,6 +49,15 @@ A few very basic HTML5 Canvas functions that simplify its usage
 - Default color is white
 - Default lineWidth is 1
 
+### drawFillText(text, x, y, fontSize, colour = 'white', font = 'Arial')
+- Draw a text string / charachter at position T(x, y) with a certain size
+- Default color is white
+- Default font is Arial
+
+### drawStrokeText(text, x, y, fontSize, font = 'Arial')
+- Draw a text string / charachter at position T(x, y) with a certain size
+- Default font is Arial
+
 ### mousePos(canvas, evt)
 - Depending where on the canvas you you are returns those coordinates
 - Depends on the canvas event mouseMove
