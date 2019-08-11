@@ -70,6 +70,9 @@ A few very basic HTML5 Canvas functions that simplify its usage
 - b1 = lower boundry of mapped
 - b2 = upper boundry of mapped
 
+### toInt(value)
+- Takes in a number and returns the Intiger equivalent
+
 ### Globals
 - WIDTH is canvas.width
 - HEIGHT is canvas.height
