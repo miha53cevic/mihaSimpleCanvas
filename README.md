@@ -62,6 +62,14 @@ A few very basic HTML5 Canvas functions that simplify its usage
 - Depending where on the canvas you you are returns those coordinates
 - Depends on the canvas event mouseMove
 
+### map(s, a1, a2, b1, b2)
+- This function takes a value s from a certain range a1 -> a2 and maps it to another range b1 -> b2
+- s = value that should be mapped
+- a1 = lower boundry of the value that should be mapped
+- a2 = upper boundry of the value the should be mapped
+- b1 = lower boundry of mapped
+- b2 = upper boundry of mapped
+
 ### Globals
 - WIDTH is canvas.width
 - HEIGHT is canvas.height
