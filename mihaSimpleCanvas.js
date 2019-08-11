@@ -115,3 +115,9 @@ function mousePos(canvas, evt) {
         y: evt.clientY - rect.top
     };
 }
+
+// Maps values from one range to another
+function map(s, a1, a2, b1, b2)
+{
+	return b1 + ((s - a1) * (b2 - b1)) / (a2 - a1);
+}
