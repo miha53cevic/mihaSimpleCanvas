@@ -73,6 +73,9 @@ A few very basic HTML5 Canvas functions that simplify its usage
 ### toInt(value)
 - Takes in a number and returns the Intiger equivalent
 
+### toBoolean(string)
+- Takes in a string that has "true" or "false" and returns the boolean equivalent
+
 ### Globals
 - WIDTH is canvas.width
 - HEIGHT is canvas.height
