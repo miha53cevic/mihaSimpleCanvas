@@ -76,6 +76,12 @@ A few very basic HTML5 Canvas functions that simplify its usage
 ### toBoolean(string)
 - Takes in a string that has "true" or "false" and returns the boolean equivalent
 
+### lineStrip(array, colour = 'white', corner = 'round')
+- Takes in array that contains an object with x and y and connect those points into one line
+- array = a object containing an x and y
+- colour = default is white
+- corner = type of corner, default is round
+
 ### Globals
 - WIDTH is canvas.width
 - HEIGHT is canvas.height
