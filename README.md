@@ -78,9 +78,16 @@ A few very basic HTML5 Canvas functions that simplify its usage
 
 ### lineStrip(array, colour = 'white', corner = 'round')
 - Takes in array that contains an object with x and y and connect those points into one line
-- array = a object containing an x and y
+- array = an object containing an x and y
 - colour = default is white
 - corner = type of corner, default is round
+
+### rectCircleStrip(centerX, centerY, array, colour = 'white', width = 1)
+- Takes in desired circle center, a height array, color, width and draws a clock like strip with rectangles 
+- centerX, centerY = desired center of the circle
+- array = a 1D array that contains the height values for the rectangles
+- colour = default is white
+- width = width of the rectangles
 
 ### Globals
 - WIDTH is canvas.width
