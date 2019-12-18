@@ -82,11 +82,12 @@ A few very basic HTML5 Canvas functions that simplify its usage
 - colour = default is white
 - corner = type of corner, default is round
 
-### rectCircleStrip(centerX, centerY, array, colour = 'white', width = 1)
+### rectCircleStrip(centerX, centerY, array, colour = 'white', radius = 50, width = 1)
 - Takes in desired circle center, a height array, color, width and draws a clock like strip with rectangles 
 - centerX, centerY = desired center of the circle
 - array = a 1D array that contains the height values for the rectangles
 - colour = default is white
+- radius = radius of the circle
 - width = width of the rectangles
 
 ### Globals
