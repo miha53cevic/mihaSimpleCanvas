@@ -147,7 +147,7 @@ function lineStrip(array, colour = 'white', corner = 'round') {
 }
 
 // Takes in desired circle center, a height array, color, width and draws a clock like strip with rectangles 
-function rectCircleStrip(centerX, centerY, array, colour = 'white', width = 1) {
+function rectCircleStrip(centerX, centerY, array, colour = 'white', radius = 50, width = 1) {
 
     // Get angle to rotate for circle points
     const angle = 360 / array.length;
@@ -159,7 +159,7 @@ function rectCircleStrip(centerX, centerY, array, colour = 'white', width = 1) {
         // Center is at 0,0 because we use translate
         const cx = 0;
         const cy = 0;
-        const r = 50;
+        const r = radius;
 
         // Circle points
         const x = cx + r * Math.cos(toRadian(a));
