@@ -66,7 +66,7 @@ A few very basic HTML5 Canvas functions that simplify its usage
 - This function takes a value s from a certain range a1 -> a2 and maps it to another range b1 -> b2
 - s = value that should be mapped
 - a1 = lower boundry of the value that should be mapped
-- a2 = upper boundry of the value the should be mapped
+- a2 = upper boundry of the value that should be mapped
 - b1 = lower boundry of mapped
 - b2 = upper boundry of mapped
 
@@ -83,7 +83,7 @@ A few very basic HTML5 Canvas functions that simplify its usage
 - corner = type of corner, default is round
 
 ### rectCircleStrip(centerX, centerY, array, colour = 'white', radius = 50, width = 1)
-- Takes in desired circle center, a height array, color, width and draws a clock like strip with rectangles 
+- Takes in a desired circle center, a height array, color, width and draws a clock like strip with rectangles 
 - centerX, centerY = desired center of the circle
 - array = a 1D array that contains the height values for the rectangles
 - colour = default is white
